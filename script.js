@@ -27,6 +27,8 @@ function activateAnimations() {
 
 
 
+
+
 // Déclencher les animations lorsque la page est chargée et lors du défilement
 window.addEventListener('load', activateAnimations);
 window.addEventListener('scroll', activateAnimations);
@@ -52,6 +54,5 @@ document.querySelectorAll('nav ul li a').forEach(link => {
         smoothScroll(targetId);
     });
 });
-
 
 

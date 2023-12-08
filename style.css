@@ -59,7 +59,10 @@ nav ul li a {
 
 nav ul li a:hover {
     color: #f5a623;
+    transform: scale(1.1); 
+    transition: transform 0.3s ease;
 }
+
 
 /* Sections */
 section {
@@ -111,11 +114,11 @@ h2 {
 .github-link img {
     width: 40px;
     height: auto;
-    transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease; 
     opacity: 0;
 }
 
-/* Afficher l'overlay et l'icône GitHub au survol de la carte */
+/* Affiche l'overlay et l'icône GitHub au survol de la carte */
 .project-card:hover .card-overlay {
     opacity: 1;
 }
@@ -236,4 +239,11 @@ footer {
 .social-icons a img {
     width: 24px;
     height: auto;
+}
+
+/* Ajoute une animation de survol sur les icônes sociales */
+.social-icons a:hover {
+    color: #f5a623;
+    transform: rotate(360deg);
+    transition: transform 0.3s ease;
 }
